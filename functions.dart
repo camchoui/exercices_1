@@ -137,7 +137,7 @@ ex1_8(){
 }
 
 ex1_9(){
-  main (){
+ {
     var list = ['Jean-Michel', 'Marc', 'Vanessa', 'Anne', 'Maximilien', 'Alexandre-Benoît', 'Louise'];
     print(list);
     for( var i = 0; i < list.length ; i++)

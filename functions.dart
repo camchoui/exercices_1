@@ -1,13 +1,11 @@
 part of exercices_1;
 
-
-
 ex1_1(){
   var somme = 10000;
   var taux = 1.055;
   for (var n = 1; n <= 10; n++) 
   {
-    somme *= math.pow(taux, n);
+    somme *= pow(taux, n);
     print(somme);
   }
 }
@@ -69,14 +67,28 @@ ex1_5(){
 }
 
 ex1_6(){
+  bool panlindrome(word)
   {
-    var leMots= 'laval';
-    print(Panlindrome(leMots));
-
-    
+    for (int i = 0; i < word.length ~/ 2; i++) 
+    {
+      if (word[i] != word[word.length - i - 1]) 
+        return false;
+    }
+    return true;
   }
 
-  bool Panlindrome(word)
+  var leMots= 'laval';
+  print(panlindrome(leMots));
+}
+
+/*
+ex1_6(){
+  {
+    var leMots= 'laval';
+    print(panlindrome(leMots));
+  }
+
+  bool panlindrome(word)
   {
     for (int i = 0; i < word.length ~/ 2; i++) 
     {
@@ -87,6 +99,7 @@ ex1_6(){
   }
 
 }
+*/
 
 ex1_7(){
   var list = ['Jean', 'Maximilien', 'Brigitte', 'Sonia', 'Jean-Pierre', 'Sandra'];
@@ -137,6 +150,7 @@ ex1_9(){
 ex1_10(){
   compteMots ("Le vieillissement de la population limite la croissance économique, qui sera plus forte ailleurs dans le monde.");
  }
+
 compteMots(ph)
 {
 var lesMots = ph.split(" ");

@@ -1,6 +1,7 @@
 library exercices_1;
 
-import 'dart:math' as math;
+//import 'dart:math' as math;
+import 'dart:math';
 
 part 'functions.dart'; 
 

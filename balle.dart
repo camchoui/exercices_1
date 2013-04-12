@@ -1,6 +1,6 @@
 part of jeu;
 
-class Ball {
+class Balle {
 
   Board board;
 
